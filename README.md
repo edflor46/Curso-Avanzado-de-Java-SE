@@ -90,3 +90,92 @@ Conversión de clases Abstractas del proyecto previamente realizado.
 ### Documentación Javadoc
 
 ![documentacion](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1626320568/Academia-Java.-CDMX/Java-Avanzado/javadoc_w45l3o.png)
+
+## Implementando clase anidada Page al proyecto
+
+<pre>
+	<code>
+		//Clase
+		public static class Page {
+		private int id;
+		private int number;
+		private String content;
+		
+		//Constructor
+		public Page(int number, String content) {
+			super();
+			this.number = number;
+			this.content = content;
+		}
+		
+		//Metodos get y set
+		public int getId() {
+			return id;
+		}
+		public void setId(int id) {
+			this.id = id;
+		}
+		public int getNumber() {
+			return number;
+		}
+		public void setNumber(int number) {
+			this.number = number;
+		}
+		public String getContent() {
+			return content;
+		}
+		public void setContent(String content) {
+			this.content = content;
+		}
+		
+			
+	}</code>
+</pre>
+
+## Creando Interfaz DAO con métodos default y private
+
+<pre>
+	<code>
+package com.edflor.amazon.viewer.dao;
+
+import java.util.ArrayList;
+
+import com.anncode.amazonviewer.model.Movie;
+
+public interface MovieDao {
+	//Set movie
+	default Movie setMovieViewed(Movie movie) {
+		return movie;
+	}
+	
+	//Read Movie
+	default ArrayList<Movie> read(){
+		ArrayList<Movie> movies = new ArrayList();
+		return movies;
+	}
+	
+	//get Movie viewed
+	private  boolean getMovieViewed() {
+		return false;
+	}
+	
+}</code>
+</pre>
+
+## Creando la base de datos MySQL
+
+### Iniciando Servidores
+![star_server](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1626414493/Academia-Java.-CDMX/Java-Avanzado/jdbc_1_gnc10a.png)
+
+### Panel administrador
+![panel_admin](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1626414501/Academia-Java.-CDMX/Java-Avanzado/jdbc_2_xp66gq.png)
+
+### Creación de usuario y base de datos
+![user_Database](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1626414497/Academia-Java.-CDMX/Java-Avanzado/jdbc_3_ygpinz.png)
+
+
+### Importar base de datos
+![import_DB](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1626414490/Academia-Java.-CDMX/Java-Avanzado/jdbc_4_ikduon.png)
+
+### Base de datos Amazonviewer
+![db](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1626414490/Academia-Java.-CDMX/Java-Avanzado/jdbc_4_ikduon.png)
