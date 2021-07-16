@@ -178,4 +178,4 @@ public interface MovieDao {
 ![import_DB](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1626414490/Academia-Java.-CDMX/Java-Avanzado/jdbc_4_ikduon.png)
 
 ### Base de datos Amazonviewer
-![db](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1626414490/Academia-Java.-CDMX/Java-Avanzado/jdbc_4_ikduon.png)
+![db](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1626414491/Academia-Java.-CDMX/Java-Avanzado/jdbc_5_xu0wvv.png)
