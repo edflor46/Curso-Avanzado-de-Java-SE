@@ -1,0 +1,6 @@
+
+ :: BOOK ::
+ Title: Book 1
+ Editorial: editorial 1
+ Edition Date: Fri Jul 16 09:53:10 CDT 2021
+ Authors: 	author 0 	author 1 	author 2 

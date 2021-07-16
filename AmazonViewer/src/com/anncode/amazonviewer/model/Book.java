@@ -29,7 +29,7 @@ public class Book extends Publication implements IVisualizable {
 		super(title, edititionDate, editorial);
 		// TODO Auto-generated constructor stub
 		setAuthors(authors);
-		this.pages = page;
+		this.pages = pages;
 	}
 
 

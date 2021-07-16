@@ -11,7 +11,7 @@ import com.anncode.amazonviewer.model.Film;
 import com.anncode.amazonviewer.model.Magazine;
 import com.anncode.amazonviewer.model.Movie;
 import com.anncode.amazonviewer.model.Serie;
-//import com.anncode.makereport.Report;
+import com.anncode.makereport.Report;
 import com.anncode.util.AmazonUtil;
 
 
