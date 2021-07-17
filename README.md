@@ -279,3 +279,31 @@ public class DataBase {
 
 ### Trayendo datos de la tabla movie
 ![movie](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1626496527/Academia-Java.-CDMX/Java-Avanzado/bd_movies_rzkj45.png)
+
+## Select con filtros
+
+<pre>
+	<code>private boolean getMovieViewed(PreparedStatement preparedStatement, Connection connection, int id_movie) {
+		boolean viewed = false;
+		String query = "SELECT * FROM " + TVIEWEd +
+				" WHERE " + TVIEWED_MATERIAL + "= ?" + 
+				" AND " + TVIEWED_ELEMENT + "= ?"+
+				" AND " + TVIEWED_USER + "= ?";
+		
+		ResultSet rs = null;
+		try {
+			preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setInt(1, ID_TMATERIAL[0]);
+			preparedStatement.setInt(2, id_movie);
+			preparedStatement.setInt(3, TUSER_IDUSUARIO );
+			
+			rs = preparedStatement.executeQuery();
+			
+			viewed = rs.next();
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return viewed;
+	}</code>
+</pre>

@@ -19,7 +19,7 @@ public class DataBase {
 	
 	//TABLA MATERIAL
 	public static final String TMATERIAL        = "material";
-	public static final String TMATERIAL_ID     = "id";
+	public static final int[]  ID_TMATERIAL     = {1,2,3,4,5};
 	public static final String TMATERIAL_NAME   = "name";
 	
 	//TABLA USER
@@ -30,7 +30,9 @@ public class DataBase {
 	//TABLA VIEWEd
 	public static final String TVIEWEd       	= "viewed";
 	public static final String TVIEWED_ID     	= "id";
-	public static final String TVIEWED_NAME   	= "id_material";
+	public static final String TVIEWED_MATERIAL = "id_material";
 	public static final String TVIEWED_ELEMENT  = "id_element";
 	public static final String TVIEWED_USER   	= "id_user";	
+	
+	public static final int  TUSER_IDUSUARIO 	= 1;
 }
