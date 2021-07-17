@@ -276,3 +276,6 @@ public class DataBase {
 		return movies;
 	}</code>
 </pre>
+
+### Trayendo datos de la tabla movie
+![movie](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1626496527/Academia-Java.-CDMX/Java-Avanzado/bd_movies_rzkj45.png)

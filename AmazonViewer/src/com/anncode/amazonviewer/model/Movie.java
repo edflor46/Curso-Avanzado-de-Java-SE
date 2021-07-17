@@ -79,7 +79,7 @@ public class Movie extends Film implements IVisualizable, MovieDao {
 		Movie movie = new Movie();
 		
 		return movie.read();
-	}
+	} 
 
 	/**
 	 * {@inheritDoc} 

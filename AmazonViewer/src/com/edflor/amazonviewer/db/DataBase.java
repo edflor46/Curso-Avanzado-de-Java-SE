@@ -10,9 +10,9 @@ public class DataBase {
 	
 	//TABLA MOVIE
 	public static final String TMOVIE           = "movie";
-	public static final String TMOVIE_ID        = "amazonviewer";
+	public static final String TMOVIE_ID        = "id";
 	public static final String TMOVIE_TITlE     = "title";
-	public static final String TMOVIE_GENRE     = "amaznviewer";
+	public static final String TMOVIE_GENRE     = "genre";
 	public static final String TMOVIE_CREATOR   = "creator";
 	public static final String TMOVIE_DURATIOB  = "duration";
 	public static final String TMOVIE_YEAR      = "year";

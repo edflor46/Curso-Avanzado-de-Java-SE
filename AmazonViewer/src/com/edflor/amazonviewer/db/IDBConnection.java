@@ -11,11 +11,11 @@ public interface IDBConnection {
 		 try {
 			Class.forName("com.mysql.jdbc.Driver");
 			connection = DriverManager.getConnection(URL+DB, USER, PASSWORD);
-		} catch (Exception e) {
-			// TODO: handle exception
 			if (connection != null) {
 				System.out.println("Se establecio la conexion");
 			}
+		} catch (Exception e) {
+			// TODO: handle exception
 			e.printStackTrace();
 		} finally {
 			return connection;
