@@ -307,3 +307,22 @@ public class DataBase {
 		return viewed;
 	}</code>
 </pre>
+
+## Sentencia INSERT Java
+<pre>
+	<code>	default Movie setMovieViewed(Movie movie) {
+		try (Connection connection = connectToDB()){
+			Statement statement = connection.createStatement();
+			String query = "INSERT INTO " + TVIEWEd +
+					"("+TVIEWED_MATERIAL+", "+TVIEWED_ELEMENT+", "+TVIEWED_USER+")" + 
+					"VALUES("+ID_TMATERIAL[0]+", "+movie.getId()+", "+TUSER_IDUSUARIO+")";
+			if (statement.executeUpdate(query) > 0) {
+				System.out.println("Se marco en visto");
+			}
+		} catch (SQLException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return movie;
+	}</code>
+</pre>

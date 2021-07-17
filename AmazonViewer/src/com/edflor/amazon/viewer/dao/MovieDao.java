@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import static com.edflor.amazonviewer.db.DataBase.*;
 
@@ -14,6 +15,18 @@ import com.edflor.amazonviewer.db.IDBConnection;
 public interface MovieDao extends IDBConnection {
 
 	default Movie setMovieViewed(Movie movie) {
+		try (Connection connection = connectToDB()){
+			Statement statement = connection.createStatement();
+			String query = "INSERT INTO " + TVIEWEd +
+					"("+TVIEWED_MATERIAL+", "+TVIEWED_ELEMENT+", "+TVIEWED_USER+")" + 
+					"VALUES("+ID_TMATERIAL[0]+", "+movie.getId()+", "+TUSER_IDUSUARIO+")";
+			if (statement.executeUpdate(query) > 0) {
+				System.out.println("Se marco en visto");
+			}
+		} catch (SQLException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
 		return movie;
 	}
 	
